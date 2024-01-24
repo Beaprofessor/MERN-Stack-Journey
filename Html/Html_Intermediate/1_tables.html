@@ -1,0 +1,150 @@
+<!-- Tables in HTML -->
+<!-- 
+Tags and Attributes
+The basic tags used along <table> in HTML to define a table are <tr>, <td>, and <th>. 
+
+The <table> tag is used to define a table in HTML.
+The <tr> tag is used to define a new row in the table.
+The <td> tag is used to define the table data, i.e., the table cells for each row.
+The <th> tag is used to define the header of the Table in HTML.  
+    -->
+
+    <!-- 
+
+ -> <thead> : The <thead> element is used to define the head element in the Table. 
+
+→ <rowspan>: The <rowspan> attribute for the table header is used to declare how many rows that particular cell should span. By default, the value of <rowspan> is set as 1 and can take any positive integer value up to 65534.
+
+→ <colspan>: The <colspan> attribute is similar to <rowspan> attribute which is used along a <thead> (table head) or a <tdata> (table data), that indicates the count of the columns that particular cell should span. 
+
+→ <tbody>: The <tbody> element is used to define the body content inside the table in separate rows. The contents in the <tbody> element display a separate semantic block inside the table. 
+
+→ <tfoot>: The <tfoot> (table footer) element uses table rows to give a footer content or to summarize content at the end of the table.  -->
+
+    <!-- <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>html tables</title>
+    </head>
+    <body>
+        <table border="1">
+            <tr>
+                <th >Name</th>
+                <th >Institute</th>
+                <th >Email Address</th>
+            </tr>
+            <tr>
+                <td >coder</td>
+                <td >pu</td>
+                <td >coder@gmail.com</td>
+            </tr>
+            <tr>
+                <td >hacker</td>
+                <td >ytb</td>
+                <td >hacker@gmail.com</td>
+            </tr>
+        </table>
+    </body>
+    </html> -->
+
+
+
+
+    <!-- now lets see example of colspan and rowspan  -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>html table</title>
+    </head>
+    <body>
+        <h2>Example of Table Rowspan</h2>
+        <table border="1" cellpadding="10">
+            <tr>
+                <th rowspan="4">Users Info</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Ninja</td>
+                <td>ninja@gmail.com</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Ninja</td>
+                <td>ninja@gmail.com</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Ninja</td>
+                <td>ninja@gmail.com</td>
+            </tr>
+        </table>
+
+        <h2>Example of Table Colspan</h2>
+        <table border="1" cellpadding="10">
+            <tr>
+                 <th colspan="3" > user info </th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>NINJA A</td>
+                <td>NinjaA@gmail.com</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>NINJA B</td>
+                <td>NinjaB@gmail.com</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>NINJA C</td>
+                <td>NinjaC@gmail.com</td>
+            </tr>
+        </table>
+
+
+
+        <h2>Example of using the thead , tfoot ,tbody </h2>
+        <table summary="Ninja" width="400" border="1">
+            <caption>
+              Ninja Details
+              <hr>
+            </caption>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td align="center" bgcolor="pink" >Ninja A</td>
+                    <td align="center">18</td>
+                    <td align="center">B</td>
+                </tr>
+                <tr>
+                    <td align="center" bgcolor="yellow">Ninja B</td>
+                    <td align="center" >22</td>
+                    <td align="center" >C</td>
+                </tr>
+                <tr>
+                    <td align="center" bgcolor="red">Ninja C</td>
+                    <td align="center" >28</td>
+                    <td align="center" >A</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="3">Ninja C is the best learner</th>
+            
+                </tr>
+            </tfoot>
+
+        </table>
+    </body>
+    </html>
