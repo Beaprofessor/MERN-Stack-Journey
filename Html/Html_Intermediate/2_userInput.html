@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Input in HTML</title>
+</head>
+
+<body>
+    <h1>Introduction To User Input</h1>
+    <p>Forms in HTML are used to take the input from the user and then allow us to perform various operations on the
+        data taken from the user.</p>
+    <ol>
+        <li>
+            <h3>Textfield</h3>
+            <span>
+                This is an element of the form used to take the text input from the user, but the constraint is the text
+                input should not exceed a particular range.
+
+                It also supports the Placeholder attribute, which means we can set the default text on the text field
+                area on which we are working.
+            </span>
+            <br><br>
+            <form>
+                <label for="fname">First name : </label>
+                <input type="text" placeholder="Coding Ninjas">
+                <br><br>
+            </form>
+        </li>
+
+        <li>
+            <h3>Textarea</h3>
+            <span>
+                This is an element of the form used to take the input from the user in the form of text in which we can specify how many rows, column input we can take.
+            </span>
+            <br><br>
+            <form>
+                 <label >Reveiw of Coding Ninjas : </label>
+                 <textarea  cols="30" rows="5"></textarea>
+                 <br><br>
+
+            </form>
+        </li>
+        <li>
+            <h3>Checkbox</h3>
+            <span>
+                This is an element of the form that allows users to give multiple inputs predefined by the developer.
+            </span>
+            <br><br>
+            <form>
+                <input type="checkbox" value="Web_Development">
+                <label for="Course1">Web_Development</label>
+                <br>
+                <input type="checkbox" value="Data Structures and Algorithms">
+                <label for="Course2">Data Structures and Algorithms</label>
+                <br>
+                <input type="checkbox" value="CyberSecurity">
+                <label for="Course3">CyberSecurity</label>
+                <br><br>
+            </form>
+        </li>
+        <li>
+            <h3>  Display Radio-Button</h3>
+            <span>
+                This element of the form of HTML permits the user to give the single input from the given option, which the web developer provides.
+ 
+                Here we use the name attribute to specify that the given input is of a single category.
+            </span>
+            <br>
+            <form>
+                <p>Please Select your age for checking the eligibility for Coding Ninjas Courses</p>
+                <input type="radio" name="age" id="18">
+                <label for="age1">0-18</label><br>
+                <input type="radio" name="age" id="30">
+                <label for="age1">18-30</label><br>
+                <input type="radio" name="age" id="45">
+                <label for="age1">30-45</label><br>
+                <input type="radio" name="age" id="60">
+                <label for="age1">45-60</label><br>
+                <input type="radio" name="age" id="100">
+                <label for="age1">60-100</label><br><br>
+            </form>
+        </li>
+    </ol>
+
+</body>
+
+</html>
