@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia</title>
+</head>
+
+<body>
+    <h2>Multimedia</h2>
+    <p>HTML supports only these video standards : </p>
+    <ul>
+        <li>MP4</li>
+        <li>WebM</li>
+        <li>Ogg</li>
+    </ul>
+    <p>Let’s talk about audio files now. These are the formats supported by HTML:
+    </p>
+    <ul>
+        <li>MP3</li>
+        <li>WAV</li>
+        <li>Ogg</li>
+    </ul>
+
+    <h3>Video Tag</h3>
+    <video src="Haryana Hood (Official Video) Irshad Khan _ Desi Balak Gama Ke _ New Haryanvi Songs Haryanavi 2023.mp4" controls width="320" height="240">Welcome to Video Tag</video>
+    <!-- 
+        Attributes Of HTML Video tags
+ Attribute   Description
+
+ controls	It shows the video controls which are displayed with play/pause buttons.
+ height	    It sets the height of the video player.
+ width	    It sets the width of the video player.
+ poster	    It is used to specify the image which is displayed on the screen when the video is  not played.
+ autoplay	It will play the video as soon as it is ready.
+ src	    It is used to specify the source URL of the video file.
+ loop    	Due to this video file will loop over again on completion.
+ muted	    You can use it when you want a mute video output.
+ preload	It is used to show the author’s view to upload a video file when the page loads.
+     -->
+
+    <h3>Audio Tag</h3>
+    <audio src="keejo-kesari-ke-laal-jai-shree-ram-dj-karan-kahar.mp3" controls>Welcome to Audio tag</audio>
+
+     <!--
+        Attributes of HTML Audio Tags
+
+    Attribute    Description
+
+    controls	It shows the audio controls which are displayed with play/pause buttons.
+    autoplay	It will play the audio as soon as it is ready.
+    src	        It is used to specify the source URL of the audio file.
+    loop	    Due to this audio file will loop over again on completion.
+    muted	    You can use it for mute audio output.
+    preload	    It is used to show the author’s view to upload an audio file when the page loads.
+       -->
+
+       <h2>HTML Youtube Videos</h2>
+       <p>You can also play videos on your web page using Youtube. Generally, many people struggle with converting video formats so that they can embed those in their web pages. The solution is to just let youtube play videos on your web page. It is the easiest way to play videos on your web page. Lets see the steps involved in it:
+
+        Whenever you save or copy a video from youtube, you will always find an ID associated with that video. We will make use of this ID for playing that video on our web page. Lets see different ways for adding a youtube video:-</p>
+
+        <h3>Adding Youtube Video On WebPage</h3>
+        <h4>Using iFrame Tag</h4>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/qeVUGnke9ko?si=uwHbJFq8543RMbmQ"></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/a6j5lbt6OLQ?si=QZ9Ztwe4bs7qejO4" frameborder="2"></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/q8vf-Lm-b54?si=U1yoHu4bhjcPCp6Ncontrols=0"></iframe>
+
+        <h3>Creating a Youtube Playlist</h3>
+         
+        <iframe width="420" height="345"
+
+        src="https://www.youtube.com/embed/SrVLcvfomtY?playlist=8jlsCDwrGTU,SrVLcvfomtYloop=1"></iframe>
+
+        <h3>Youtube Controls</h3>
+        <p>We can add or remove controls to the youtube videos that we have embedded in our web page.
+
+            controls = 0, Player controls will not display.
+            controls = 1, Player controls will display
+            Let me show an example for this:</p>
+            <br></br>
+        <iframe width="420" height="345"
+        src="https://www.youtube.com/embed/ruZLtbWR1rU?controls=0">
+
+      </iframe>
+</body>
+
+</html>
