@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Graphics in HTML</title>
+</head>
+
+<body>
+    <h3>HTML <code> svg </code>Element</h3>
+    <p>The HTML <svg> element serves like a container for SVG graphics.You can draw paths, boxes, circles, and graphic
+            images using different methods provided by SVG. Let’s see different examples of HTML SVG:-</p>
+
+
+    <h3>HTML SVG Circle</h3>
+    <!--specifying width and height using SVG tag-->
+    <svg width="100" height="100">
+        <!--The <circle> element is used to draw a circle-->
+        <circle cx="50" cy="50" r="40" stroke="aqua" stroke-width="2.5" fill="black" />
+        <!--  
+         cx and cy:- The cx and cy attributes define the x and y coordinates of the center of the circle. By default, the center of the circle is assumed to be (0,0).
+ 
+         r attribute:- r attribute defines the radius of the circle.
+ 
+         Stroke and stroke-width:- These attributes will define the outline of the shape.
+ 
+         fill attribute:-This attribute refers to the color inside the shape.
+            -->
+    </svg>
+
+    <h3>HTML svg logo</h3>
+    <svg height="130" width="500">
+        <defs>
+            <linearGradient id="grad1" x1="1%" y1="2%" x2="70%" y2="3%">
+                <stop offset="3%" style="stop-color:rgb(105,100,200);
+                    stop-opacity:1" />
+                <stop offset="80%" style="stop-color:rgb(205,125,4);
+                   stop-opacity:1" />
+            </linearGradient>
+        </defs>
+        <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+        <text fill="#ffffff" font-size="25" font-family="Arial" x="50" y="50">Ninja</text>"Sorry, your browser does not support inline SVG".
+
+    </svg>
+</body>
+
+</html>
