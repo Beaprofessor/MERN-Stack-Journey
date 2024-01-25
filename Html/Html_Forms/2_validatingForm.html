@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validating form</title>
+    <link rel="stylesheet" href="2_style.css">
+</head>
+
+<body>
+    <h1>Validating form with Parsley.js</h1>
+
+    <h3>What is Parsley.js ?</h3>
+    <p>
+        Parsley.js is a JavaScript library for form validation. It is used in web applications to ensure the data
+        entered in a form is in the correct format. It can be used to set various criteria and ensure the data is
+        accurate and meets the requirements set by the developer.
+
+        Parsley.js provides a set of built-in validation rules that can be applied to any input fields like email,
+        passwords, checkbox, date, etc. These validation rules are backed by a set of error messages that are used to
+        inform the user about any mistakes while filling out the form.
+
+        Let’s discuss all its features in detail.</p>
+
+    <h3>Features of Parsley.js</h3>
+    <ul>
+        <li>
+            <h4>Built-in Validation rules</h4>
+            <span>Parsley.js contains a large number of predefined rules that can be used for the validation of
+                different input fields. These rules ensure the correct format is being followed.</span>
+        </li>
+        <li>
+            <h4>Customized rules:</h4>
+            <span>Along with the built-in rules, users are free to create their own rules to specify their requirements.
+                This makes it more flexible and convenient for developers.</span>
+        </li>
+        <li>
+            <h4>Easy to implement:</h4>
+            <span>Parsley.js can be easily added to any web application without the need for any extra knowledge. The
+                CSS and JavaScript files are only needed to be included in the project.</span>
+        </li>
+        <li>
+            <h4>Error messages:</h4>
+            <span></span>
+        </li>
+    </ul>
+    <h3>Let’s dive into a real-world example of Form validation. Follow the below-mentioned steps, and you will end up
+        with a Signup form for your website.</h3>
+
+    <h4>Include jQuery and Parsley.js</h4>
+    <p>First, you need to include jQuery, as Parsley.js relies on jQuery (>= 1.8). Both jQuery and Parsley.js can be
+        included in two ways, either using a CDN link or by downloading the files and including it manually.</p>
+
+    <!-- 
+        The CDN links can be included as below in the head section.
+
+
+         <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.js"></script> -->
+
+    <h2>Creating a Basic HTML Form</h2>
+
+    <div class="container">
+        <!-- <h3>Create Account</h3>
+
+        <form action="" class="signup" id="confirm" method="post">
+            <input name="name" id="name" placeholder="Enter Full name" />
+            <input name="email" id="email" placeholder="Enter Email Id" />
+            <input name="password" id="password" placeholder="Create password" />
+            <button type="submit">Sign Up</button>
+        </form> -->
+
+
+    <!-- <h3>Add Validation Attributes and Initialize Parsley</h3>
+    <ul>
+        <li><strong>Required : </strong> <span>Indicates that the field is required.</span></li>
+        <li><strong>data-parsley-type : </strong><span>Specifies the expected data type (e.g., "email", "number").</span></li>
+        <li><strong>data-parsley-minlength : </strong> Defines the minimum length of the input.</li>
+        <li><strong>data-parsley-error-message : </strong> Custom error message for a specific rule.</li>
+    </ul> -->
+
+
+    <form action="" class="signup" id="cnform" method="post" data-parsley-validate>
+        <input
+            name="name"
+            id="name"
+            placeholder="Enter Full Name"
+            required
+            data-parsley-required-message="Name is required"
+        />
+        <input
+            name="email"
+            id="email"
+            placeholder="Enter Email ID"
+            required
+            data-parsley-required-message="Email is required"
+            data-parsley-type="email"
+            data-parsley-type-message="Enter a valid email address"
+        />
+        <input
+            name="password"
+            id="password"
+            placeholder="Create Password"
+            required
+            data-parsley-required-message="Password is required"
+            data-parsley-minlength="12"
+            data-parsley-minlength-message="Password must be at least 12 characters"
+        />
+        <button type="submit">Sign Up</button>
+    </form>
+</div> 
+
+</body>
+
+<script>
+    $(document).ready(function () {
+      $("#cnform").parsley();
+    });
+</script>
+</html>
