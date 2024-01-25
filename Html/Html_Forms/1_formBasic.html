@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Basics</title>
+</head>
+<body>
+    <h1>Form Basics</h1>
+    <h2>Html forms</h2>
+
+    <form action="/action_page.php">
+       <label for="name">Name : </label>
+       <input type="text" id="name" name="name"> <br><br>
+       <label for="email">Email : </label>
+       <input type="text" name="mail_id" id="email"><br><br>
+       <label for="relation">Describe your relation with Coding in one or two line</label><br><br>
+       <textarea name="relation" id="relation" cols="30" rows="10"></textarea><br><br>
+       <button type="submit">Submit</button>
+    </form>
+    <p>If u click the "Submit" Button, the form data will be sent to a page called "/action_page.php"</p>
+</body>
+</html>
