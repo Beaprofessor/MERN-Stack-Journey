@@ -1,0 +1,39 @@
+<!-- Html code begins -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Input type Number</title>
+</head>
+<body>
+    <h1>Html Input type Number</h1>
+    <h3>Number Input type</h3>
+    <p>The Number Input Type specifies a number input. As the name says, it only accepts numeric values. There are two ways to fill the value in the HTML Input Type Number. The first is by typing the number manually, or the second is by using the small up and down button in the input field.</p>
+    <br>
+    <br>
+
+    <h4>syntax</h4>
+    <p><code>
+        input type="number"
+    </code></p>
+
+    <h3>Using the input type number</h3>
+    <form action="/example/action.html">
+        <fieldset>
+            <legend>Number(0-50,increments of 10)</legend>
+            <input type="number" name="number" min="0" max="50" step="1" value="20" /><br><br>
+            <input type="submit" value="Submit">
+            <!-- 
+                -> min -> This attribute is used to fix the minimum value that can be filled in the input box. The minimum value in the above example is 0
+                -> max -> This attribute is used to fix the maximum value that can be filled in the input box. The maximum value in the above example is 50.
+                -> step ->  The granularity to which the value must adhere, or the special value, is specified by the step attribute, which is a number. Only values that match the criteria for stepping - min, if provided, value, if not, and a valid default value if neither is given - is valid.
+                -> value -> Value is a number that represents the default numeral shown in the input box. Adding a number inside the value property can define a default value for the input.
+            -->
+        </fieldset>
+    </form>
+</body>
+</html>
+
+<!-- Html code ends -->
