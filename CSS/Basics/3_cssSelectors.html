@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+</head>
+
+<body>
+    <h1>CSS Selectors</h1>
+
+    <h3>CSS Ruleset</h3>
+    <img src="https://files.codingninjas.in/article_images/css-selectors-0-1635235444.webp" alt="CSS Ruleset">
+
+    <h2> universal selector </h2>
+    <p>
+        A universal selector selects every HTML element present on the webpage. It is also known as a wildcard. The
+        universal selector is denoted by the asterisk (*) symbol.
+
+        syntax:
+        *{
+        property: value;
+        }
+        Example :
+        * {
+        margin: 0;
+        }
+
+    </p>
+
+    <h2>Type Selector</h2>
+    <p>
+        The type selector selects all the HTML elements of the particular type. It is also called an element selector.
+        Using this, we can select elements like paragraph , button , etc.
+
+        Syntax :
+
+        element {
+        property: value;
+        }
+
+        Example :
+        p {
+        color: red;
+        }
+    </p>
+
+    <h2>Class Selector</h2>
+    <p>
+        The class selector selects the HTML elements with the specific class attribute. It uses the full stop "."  followed by the class name.
+        
+        Syntax :
+        .className {
+            property:value;
+        } 
+
+        Example :
+        .container{
+            background-color:yellow;
+        }
+
+    </p>
+
+    <h2>ID Selector</h2>
+    <p>
+        The ID selector selects all the HTML elements with the specific ID attribute. It is used with the hashtag "#"  followed by the id name.
+        
+        Syntax :
+        #IDName{
+            property:value;
+        }
+
+        Example :
+        #mainContainer{
+             background-color:black;
+        }
+    </p>
+
+    <h2>Attribute Selector</h2>
+    <p>
+        The attribute selector selects HTML elements with a specified attribute. For this, the square brackets ([ ]) are used. In case-sensitive attribute selectors, the "s" operator is added to the attribute selector. And for case insensitivity, the "i" operator is added to the attribute selector.
+
+        Syntax : 
+        [attribute] {
+            property: value;
+       }
+    </p>
+    <!-- 
+        Attribute selector
+
+Description
+
+[attribute]	Selects the HTML elements with the specified attribute.
+[attribute=value]	Select the HTML elements with the specified attribute and value.
+[attribute~=value]	Selects the HTML elements with the attribute value containing the specified word. In this case, the value has to be a whole word like "first," "main," etc which can be separated by spaces.
+[attribute|=value] 	Selects the HTML elements with the specified attribute starting with the specified value. In this case, the value has to be a whole word like "first," "main," etc which can be separated by hyphens (-).
+[attribute^=value] 	Select the HTML elements whose attribute value begins with the specified value.
+[attribute$=value]	Selects the HTML elements whose attribute value ends with the specified value.
+[attribute*=value]	Selects the HTML elements whose attribute value contains the specified
+     -->
+
+</body>
+
+</html>
