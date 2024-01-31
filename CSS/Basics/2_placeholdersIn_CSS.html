@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placeholders in CSS</title>
+    <style>
+    body{
+        text-align: center  /*This will align the text of the body tag in the center*/
+        }
+        input::placeholder {
+            font-weight: bold;
+            opacity: 0.3;
+            color: blue;
+        }  
+    </style>  
+</head>
+
+<body>
+    <h1>Placeholders in CSS</h1>
+    <h3>What is ::placeholder in CSS</h3>
+    <p>
+        A CSS pseudo-element is an element added to a selector that allows you to style a specific part of the selected
+        element. For example, the ::first-letter can be used to style the first letter of the first line of a paragraph.
+        The ::placeholder css is one such CSS pseudo-element used to style the placeholder text.
+
+
+        The ::placeholder CSS selector creates form components with placeholder text and allows you to style them. The
+        placeholder text appears as a transparent or light grey color for most of the popular browsers by default.
+
+        It is used to set a placeholder text, which as a hint, helps the user to know the format of the required input.
+        For example,
+
+        In the above example, the placeholder text helps the user know how the “Full Name” and “Mobile number” need to
+        be entered. Let's learn about the syntax and how to program this placeh selector.
+    </p>
+    <h4>Syntax</h4>
+    <p>
+        And for adding placeholder CSS styling to these, follow the following syntax.
+        
+        <input type="Write type here" placeholder="Placeholder text here">
+    </p>
+     <p>   
+        And for adding placeholder CSS styling to these, follow the following syntax.
+
+        <!-- selector::placeholder{
+            /* Write CSS properties here like font-weight, color, etc.*/…..
+            } -->
+    </p>
+    <p> First Name:  <input type="text" placeholder="e.g. Kanishk"> </p>
+    <p> Last Name:  <input type="text" placeholder="e.g. Singla"> </p>
+    <p> Mobile number:  <input type="Mobile number" placeholder="+91 98765-43210"> </p>
+    <p> Email:  <input type="email" placeholder="e.g. xyz@gmail.com"> </p>
+
+    <h3>Some of the Supported Styles</h3>
+    <p>
+        <strong>Font properties:</strong>- We can change the color, font style, font opacity, etc., using CSS properties.
+        <br>
+        <strong>Alignment:</strong>- This decides the alignment of our text on the web page.
+        <br>
+        <strong>Color:</strong>- This placeholder CSS property is used to change font color, background color, the color of borders, etc.
+        <br>
+        <strong>Opacity:</strong>- This CSS property defines the element's visibility, or you can say the extent to which the content behind an element is obscured.
+        <br>
+        <strong>Text-indent;</strong>- This property is used to define the indentation for a block/line of code.
+        <br>
+        <strong>Text-transform:</strong>- This property is used to capitalize the text of the element. It can change the text to uppercase, lowercase, or capitalize on each word.
+        <br>
+        <strong>Background properties:</strong>- These properties are used to define the background effects on an element.
+        <br>
+        <strong>Word-spacing:</strong>- We can change the spacing between the words using this property. A positive value depicts an increase in current spacing, and a negative shows a decrease. 
+    </p>
+</body>
+
+</html>
