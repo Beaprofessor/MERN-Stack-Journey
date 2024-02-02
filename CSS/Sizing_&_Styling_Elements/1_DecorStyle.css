@@ -1,0 +1,11 @@
+#line {
+    color: red;
+    text-decoration-line: underline;
+    text-decoration-color: skyblue;
+}
+
+#decor1 {
+    color: blue;
+    text-decoration-style:double;
+    text-decoration-color: black;
+}
