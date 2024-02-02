@@ -1,0 +1,87 @@
+body{
+    display:flex;
+}
+.second{
+    margin-left: 50px;
+    text-shadow: 2px 2px;
+}
+/*
+   first 2px is left top and -2px for left down.
+   second 2px is right down and -2px for right up.
+*/
+
+/* For Coloured Shadow  */
+.second{
+    text-shadow:2px 2px  royalblue;
+}
+
+/* For blured shadow  */
+.second{
+    text-shadow: 2px 2px 5px aqua;
+}
+
+/* For multiple shadow */
+.second{
+    text-shadow: 1px 1px 2px black , 0 0 25px blue , 0 0 5px darkblue;
+}
+
+/* For Border-Around Text */
+.second{
+    color: white;
+    text-shadow: -1px 0 black , 0 1px black , 1px 0 black , 0 -1px black;
+}
+
+
+
+/* box - shadow */
+
+.one{
+    margin-left: 50px;
+    height: 250px;
+    width: 250px;
+    background-color: orange;
+}
+.two{
+    margin-left: 100px;
+    height: 250px;
+    width: 250px;
+    background-color: orange;
+    box-shadow: 10px 10px;
+}
+
+
+/* Coloured and Blurred Shadows */
+.two{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 114px 4px inset , rgba(10,0,0,6.3) 11px 48px 42px 4px inset;
+}
+
+/* Spread Radius */
+.two{
+    box-shadow: 10px 10px 5px 5px grey;
+ 
+}
+
+/* Border Radius */
+.two{
+    box-shadow: 10px 10px 5px 5px grey;
+    border-radius: 5px;
+}
+
+/* Inset Keyword */
+.two{
+    Box-shadow: inset 10px 10px 5px 5px grey;
+
+}
+
+/* Multiple Shadows */
+.two{
+    box-shadow: 5px 5px 20px 5px darkslateblue, -5px -5px 20px 5px dodgerblue, inset 0px 0px 10px 2px darkslategray, inset 0px 0px 20px 10px rgb(191, 76, 27);
+}
+
+
+/* CARDS */
+img{
+    margin: 70px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4),
+    0 7px 22px 0 rgba(0, 0, 0, 0.2);;
+}
