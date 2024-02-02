@@ -1,0 +1,29 @@
+/* Using two colors as arguements */
+.box{
+    background-image: linear-gradient(yellow , #00fffb);
+    width: 900px;
+    height: 300px;
+}
+
+/* Using multiple colors as arguements */
+.box{
+    background-image: linear-gradient(red ,yellow ,black, #00fffb);
+}
+
+/* To Left or to Right Gradient */
+.box{
+    background-image: linear-gradient(to right ,red ,yellow ,black);
+}
+
+/* Diagonal Gradient */
+.box{
+    background-image: linear-gradient(to right top , red , black , aqua);
+}
+
+
+/* Radial Gradients */
+/* Evenly Spaced Radial Gradient */
+.box{
+    background-image: radial-gradient(red, yellow, #00fffb);
+
+}
