@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display</title>
+    <link rel="stylesheet" href="4_style.css">
+</head>
+
+<body>
+    <h1>CSS Display</h1>
+
+    <p>Normal Flow</p>
+    <ul>
+        <li>C</li>
+        <li>C++</li>
+        <li>JAVA</li>
+        <li>JS</li>
+    </ul>
+
+    <p>Display Property</p>
+    <p>The display property can take on various values, including:</p>
+    <!-- <br>
+    <p><strong>“block”</strong>: This value generates a rectangular box that spans the entire width of its parent
+        container
+        and forces any subsequent content to start on a new line.</p>
+    <img src="https://files.codingninjas.in/article_images/css-layout-2-1680521826.webp" alt="Block Level">
+    <br>
+    <p><strong>"Inline"</strong>: This value generates an inline-level box that flows within a line of text and takes up
+        only the width required.</p>
+    <img src="https://files.codingninjas.in/article_images/css-layout-3-1680521826.webp" alt="Inline">
+
+    <br>
+
+    <p>strong>Inline-Block</strong>:This value generates a rectangular box with a specified width and height that flows
+        within a line of text.</p>
+    <img src="https://files.codingninjas.in/article_images/css-layout-4-1680521827.webp" alt="Inline-Block">
+
+    <br>
+    <p><strong>“none”</strong>: This value hides the element from the web page, making it invisible.
+        <br>
+        <strong>“flex”</strong>: This value enables flexbox layout, allowing easy alignment and content distribution within a container.
+        <br>
+        <strong>“grid”</strong>: This value enables grid layout, allowing us to easily create complex, multi-column layouts.
+
+        Thus, we use the display property to change the layout and appearance of an HTML element. We will discuss the
+        flex and grid values in detail later.</p> -->
+
+
+    <h3>Floats</h3>
+    <div class="img">
+        <img src="https://cdn.shopify.com/s/files/1/0709/7774/9269/files/download.jpg?v=1675416758&width=1500" />
+        <p>Sample text to observe float.</p>
+        <p>This is another paragraph.</p>
+    </div>
+
+    <h3>Positioning</h3>
+    <p>
+        The position property affects how an element behaves and interacts with other elements in the document's normal
+        flow.
+
+        The different options for this property are
+
+        “static”: An element is placed in this manner by default, following the natural flow of the page.
+        <br>
+        “relative”: This position allows an element to be positioned differently from where it would generally be on the
+        page, which means that even if an element is moved up, down, left, or right, it will continue to occupy the same
+        amount of space.
+        <br>
+        “absolute”: This position allows an element to be placed anywhere on the page, disregarding the page's natural
+        flow.
+        The element is positioned according to the element that is closest to it in the hierarchy.
+        <br>
+        “fixed”: Regardless of how the page should normally flow, this position allows an element to be positioned
+        relative
+        to the viewport (i.e., the browser window). Even if we scroll the page, the element stays in its original
+        position,
+        anchored to the top left corner.
+        <br>
+        “sticky”: This position is a combination of fixed and relative. Until a certain point, it allows an element to
+        positioned relative to its default position on the page. After that point, the element becomes fixed even if we
+        scroll the page.
+    </p>
+
+
+    <h3>Flexbox</h3>
+    <p>
+        <!-- Syntax
+           .my-element{
+            display:flex;
+           }
+        -->
+    </p>
+    <div class="block">
+        <div class="cell">First cell</div>
+        <div class="cell">Second cell</div>
+        <div class="cell">test</div>
+    </div>
+    <p>This is without-flexbox
+        <img src="https://files.codingninjas.in/article_images/css-layout-9-1680521829.webp" alt="Without-Flexbox">
+    </p>
+
+ <br><br><br>
+    <h3>Grid Layout</h3>
+    <!-- 
+            The syntax for using grids:
+
+            .my-element {
+                display:  grid;
+            }
+    -->
+    <div class="container">
+        <div class="cells">1</div>
+        <div class="cells">2</div>
+        <div class="cells">3</div>
+        <div class="cells">4</div>
+        <div class="cells">5<br>has more content.</div>
+    </div>
+
+
+</body>
+
+</html>
