@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Query</title>
+</head>
+
+<body>
+    <h1>CSS Media Query</h1>
+    <h3>
+        What are CSS Media Queries
+    </h3>
+    <p>
+        CSS media queries are a CSS feature that allows our web content to adapt to different devices based on screen
+        size, device capabilities, and the user's preferences.
+
+        Media queries help to make a modern responsive design with ease. We can use them to create different styles for
+        different devices. It aids in the responsiveness of the website.
+    </p>
+
+    <h3>Different Media Types</h3>
+    <img src="https://files.codingninjas.in/article_images/css-media-queries-0-1636478333.webp"
+        alt="Different Media Types">
+
+    <h3>Structure of a Media Query</h3>
+
+    <code>@media media-type and (media feature) {}</code>
+
+    <h3>Logical Operators</h3>
+    <p>
+        The<strong> and </strong>Operator :
+        As we have seen earlier, we can use the ‘and’ operator between a media type and media feature. The keyword used
+        for this operator is ‘and.’ We can also connect multiple media.
+        <br>
+        Example
+        <br>
+        <code>@media (min-width: 480px) and (max-width: 700px) {
+            /*...*/
+           }</code>
+    </p>
+    <p>
+        The <strong> or </strong> Operator :
+        The or operator is represented by a comma (,) or by or keyword. The ‘,’ is an old notation, whereas the ‘or’
+        keyword is a recent notation.
+
+        <br>
+
+        Example :
+        <br>
+
+        <code>
+            /* new notation */
+            @media (min-width: 400px) or (orientation: landscape) {
+            }
+            <br>
+            /* old notation */
+            @media (min-width: 400px), (orientation: landscape) {
+            }
+        </code>
+
+
+    <p>
+        The <strong> not </strong> Operator :
+        The not operator is used to negate a media query. The keyword used for this operator is ‘not’. While using a
+        not-operator, we must set a media type like print or screen; otherwise, it will become ‘not all’. Hence, it will
+        not be applied in any media type.
+
+        <br>
+
+        Example :
+        <br>
+
+        <code>
+            @media not print {
+            /*...*/
+           }
+            </code>
+    </p>
+
+    <h3>Nesting of media queries</h3>
+    <p>We can nest one media query with other media queries as well. Nesting of media queries becomes helpful when we
+        want to write multiple conditions together. We can use and operator to convert several media queries into one
+        media query.</p>
+    <code>@media (min-width: 400px) and (max-width: 800px) {
+        /*...*/
+      }
+       /*The above code can also be written as*/
+      @media (min-width: 400px) {
+       @media (max-width: 800px) {
+         /*...*/
+       }
+      }</code>
+
+
+    <h3>Using Min and Max</h3>
+    <p>In this article, we have seen so many times that various media features have been prefixed with min or max to
+        represent minimum or maximum conditions, respectively.
+
+        In the example below, the body's background is green when the viewport width is wider than 20em and narrower
+        than 40em. If the viewport width does not match the condition, then it will be red.</p>
+    <code>
+            body {
+                background-color: red;
+               }
+               
+               @media (min-width: 20em) and (max-width: 40em) {
+                body {
+                  background-color: green;
+                }
+               }
+        </code>
+
+    <h3>Media Query features</h3>
+    <p>
+        any-hover ,
+        aspect-ratio ,
+        any-pointer , 
+        color ,
+        color-index ,
+        color-gamut ,
+        device-aspect-ratio ,
+        device-width , 
+        device-height ,
+        display-mode ,
+        forced-colors ,
+        grid ,
+        width ,
+        height ,
+        hover ,
+        monochrome ,
+        inverted-colors ,
+        orientation ,
+        overflow-inline ,
+        overflow-block ,
+        pointer ,
+        prefers-color-scheme ,
+        prefers-reduced-motion ,
+        prefers-contrast ,
+        resolution ,
+        update ,
+        scripting
+    </p>
+</body>
+
+</html>
