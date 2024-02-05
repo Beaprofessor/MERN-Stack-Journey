@@ -143,3 +143,14 @@ header nav li {
     width: 150px;
     height: 150px;
 }
+
+
+
+/* FOOTER */
+footer {
+    padding: 10px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #e8491d;
+    text-align: center;
+}
