@@ -15,15 +15,61 @@
         An HTML element becomes a grid container when its display property is changed/set to grid or inline-grid. It
         defines the element as a grid container and establishes a new grid formatting context for its contents. All
         direct children of the grid containers are automatically grid items.
-<br>
+        <br>
         Values:
         <br>
         grid = generates a block-level grid
-<br>
-        inline-grid =  generates an inline-level grid
+        <br>
+        inline-grid = generates an inline-level grid
 
     </p>
-    <img src="https://files.codingninjas.in/article_images/css-grid-0-1635273728.webp" alt="" width="700px" height="300px">
+    <img src="https://files.codingninjas.in/article_images/css-grid-0-1635273728.webp" alt="" width="700px"
+        height="300px">
+
+    <h3>Properties Controlling Parent Container:</h3>
+    <h4>Grid Columns -</h4>
+    <p>Grid column tracks are created for each value that has been specified using the grid-template-columns property.
+    </p>
+    <img src="https://files.codingninjas.in/article_images/css-grid-1-1635273729.jpg" alt="Grid Columns">
+    <br><br>
+    <code>container {
+
+        grid-template-columns: 1fr 2fr 1fr 3fr;
+      
+      }</code>
+    <img src="https://files.codingninjas.in/article_images/css-grid-2-1635273729.webp" alt="">
+
+    <h3>Grid Rows -</h3>
+    <p>Using the grid rows, it can create property row tracks for each value specified for grid-template-rows. This is
+        similar to the grid columns property. These horizontal tracks formed in the grid items are called rows.</p>
+    <img src="https://files.codingninjas.in/article_images/css-grid-3-1635273729.jpg" alt="">
+    
+    <br><br>
+    
+    <code>
+        container {
+
+            grid-template-rows: 1fr 1fr 1fr;
+          
+        }          
+    </code>
+    <img src="https://files.codingninjas.in/article_images/css-grid-4-1635273730.webp" alt="">
+
+    <h3>Grid Gaps</h3>
+    <p>The grid-column-gap and grid-row-gap properties create gutters/spaces between columns and rows.
+
+        Grid gaps are only created between columns and rows and not along the edges of the grid containers 🙌.</p>
+        <img src="https://files.codingninjas.in/article_images/css-grid-5-1635273730.webp" alt="">
+        <code>
+            .parent-container {
+
+                grid-row-gap:    20%;
+            
+                grid-column-gap: 5em;
+            
+            }
+        </code>
+
 </body>
 
 </html>
