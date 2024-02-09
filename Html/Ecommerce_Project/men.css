@@ -1,7 +1,147 @@
+/* Men Page  */
+body{
+    background-color: white;
+}
 .menShowcase img{
     width: 100%;
     height: 270px;
 }
+
+/* Utility bar  */
+.utilityBar{
+    margin-top: 40px;
+    /* border: 2px solid black; */
+    display: flex;
+    gap: 500px;
+    height: 25px;
+    text-align: center;
+}
+
+
+.utilityBar-left{
+    /* border: 2px solid blueviolet; */
+    display: flex;
+    gap: 10px;
+    margin-left: 70px;
+    align-items: center;
+    font-size: 15px;
+    font-family: Futura , sans-serif;
+    color: #787a7c;
+    font-weight: 600;
+}
+
+.utilityBar-left img{
+    width: 10px;
+    height: 10px;
+}
+
+.utilityBar-center{
+    margin-left: 10px;
+    text-align: center;
+    font-family: Futura , sans-serif;
+    color: #787a7c;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.utilityBar-right{
+    display: flex;
+    gap: 10px;
+    margin-right: 70px;
+    align-items: center;
+    font-size: 15px;
+    font-family: Futura , sans-serif;
+    color: #787a7c;
+    font-weight: 600;
+}
+
+.utilityBar-right img{
+    width: 15px;
+    height: 15px;
+}
+
+.utilityBar-left span , .utilityBar-right span{
+    cursor: pointer;
+}
+
+/* Products details */
+
+.shoe-products{
+    display: flex;
+    margin-left: 25px;
+}
+
+.product-info{
+    margin-top: 25px;
+    /* border: 2px solid blue; */
+    width: 25%;
+    margin: 10px;
+}
+
+.product-info a{
+    text-decoration: none;
+}
+
+.product-info img{
+    /* margin-left: 20px; */
+    width: 300px;
+}
+.p-title{
+    text-decoration:none;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: #171717;
+    margin-left: 5px;
+
+}
+
+.product-onSale-price{
+    margin-left: 5px;
+    margin-right: 2px;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: #171717;
+}
+
+.product-compare-price{
+    text-decoration: line-through;
+    opacity: .5;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: #171717;
+    margin-right: 2px;
+}
+
+.product-Sale{
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: #c20000;
+}
+
+.product-size{
+    margin-left: 5px;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 400;
+    opacity: .7;
+    line-height: 3em;
+}
+
+.product-size span{
+    padding: 3px;
+}
+
+
+
+
+
+
+
+/* Women Page  */
 .womenShowcase img{
     width: 100%;
     height: 270px;
