@@ -42,7 +42,7 @@ console.log(myn1);
 
 
 console.log("B" , myArr);
-const myn2 = myArr.splice(1,3)    // ye jo range de rakhi hai index 1 to 3 , ye ussi ko remove kardega from the original array ... jisse original array mei change hoga...
+const myn2 = myArr.splice(1,3)    // ye jo range de rakhi hai index 1 to 3 , ye ussi index ko remove kardega from the original array ... jisse original array mei change hoga...
 
 
 console.log("C" , myArr);
