@@ -24,8 +24,8 @@ console.log(real_another_array);
 
 
 
-console.log(Array.isArray("Lokesh")); // ye puchegea ki lokesh name ka koi element hai kya tere array mei
-console.log(Array.from("Lokesh"));  // ye ek array create kardega and saare letters ka array create hojayega.....
+console.log(Array.isArray("Hitesh")); // ye puchegea ki lokesh name ka koi element hai kya tere array mei
+console.log(Array.from("Professor"));  // ye ek array create kardega and saare letters ka array create hojayega.....
 console.log(Array.from({name:"Lokesh"}));   // interesting case for interviews // ye ek empty array create kardega..as ye isse convert ni karpaayega...kyuki isse pata ni hai ki keys ka banau ya saari values se array banauuu....
 
 
