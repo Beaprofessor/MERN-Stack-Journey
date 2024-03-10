@@ -38,7 +38,7 @@ const obj4 = {
 // const obj3 = Object.assign({},obj1 ,obj2,obj4)   //{target} , source
 
 const obj3 = { ...obj1, ...obj2, ...obj4 }; // easy and simple to use to combine objects
-console.log(obj3);
+// console.log(obj3);
 
 const users = [
     {
@@ -63,12 +63,53 @@ const users = [
 ];
 
 users[1].email
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('isLogged'));   // method to find the property 
+// console.log(tinderUser.hasOwnProperty('isLogged'));   // method to find the property 
 
 
+// Destrucure part  
+
+const course = {
+  coursename: "Javascript in HINDI",
+  price : "999",
+  courseInstructor: "Hitesh"
+}
+
+// course.courseInstructor 
+// ye apan object name ko short kar rhe hai kyuki baar baar itna bada name ko call kon karega isliye apan isko short karke use karenge,..
+const {courseInstructor: instructor} = course
+const {price} = course
+
+console.log(instructor);
+console.log(price);
+
+
+
+// react  ka example of destructure
+// const navbar = ({company}) => {
+// }                                      
+// navbar(company = "Software")
+
+
+
+// API -> apna kaam kisi aur ke sir par daal dena ussi ko API kehte hai for ex- hotel mei order karna with the help of using menucard
+
+
+// ye ek JSON ki tarah react karega...keys and values dono hi string ki tarah work karti hai
+// {
+//   name: "Lokesh",
+//   courseName: "js in hindi",
+//   price: "free"
+// }
+
+//  JSON formattor ek online tool hai jisse easy hojata hai data ko read karne ka.
+[
+  {},
+  {},
+  {}
+]
