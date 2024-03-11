@@ -45,4 +45,41 @@ function loginUserMessage(username = "Sam"){
 
 
 // console.log(loginUserMessage("Lokesh"))
-console.log(loginUserMessage())   // undefined dega ye yaha par
+// console.log(loginUserMessage())   // undefined dega ye yaha par
+
+
+
+
+// Functions with objects and array in javascript
+
+function calculateCartPrice(val1 , val2 ,...num1){
+          return num1
+}
+
+// console.log(calculateCartPrice(200,400,9800,3400,2430,30400,6565,500))
+
+const user = {
+  username: "Lokesh",
+  price: 199
+}
+
+
+function handleObject(anyobject){
+  console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`)
+}
+
+// handleObject(user)
+
+handleObject({
+  username: "Sam",
+  price: 3999
+})
+
+const myNewArray = [200,400,100,600]
+function returnSecondValue(getArray){
+  return getArray[1]
+}
+
+// console.log(returnSecondValue(myNewArray));
+
+console.log(returnSecondValue([200,400,100,600]));
