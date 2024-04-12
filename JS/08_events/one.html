@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width , initial-scale=1.0">
+    <title>HTML Events</title>
+</head>
+
+<body style="background-color: #212121; color: aliceblue;">
+    <h2>Amazing Image</h2>
+    <div>
+        <ul id="image">
+            <li><img width="200px" id="girl"
+                    src="https://images.pexels.com/photos/18096595/pexels-photo-18096595/free-photo-of-music-on-street.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                    alt="girl"></li>
+            <li><img width="200px" id="japan"
+                    src="https://images.pexels.com/photos/3532557/pexels-photo-3532557.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                    alt=""></li>
+            <li><img width="200px" id="owl"
+                    src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                    alt=""></li>
+            <li><img width="200px" id="river"
+                    src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                    alt=""></li>
+            <li><a href="https://google.com" id="google">Google</a></li>
+        </ul>
+    </div>
+</body>
+<script>
+    // javascript ke andar jitna bhi events hai wo sequentially run karte hai , kuch exceptions hai , js ek sequentially run karne wali programming language hi hai.
+
+    // document.getElementById('owl').onclick = function () {
+    //     alert("Owl clicked In")
+    // }
+    // yaha par jab onlick event laga rhe hai tab , toh isme kuch problems ho sakti hai kyuki iske through bahut jaada information ni milti hai apne ko , toh isse badiya hai  <eventListners> use karna chahiye....
+
+
+    // document.getElementById('owl').addEventListener('click', function () {
+    //     //   third parameter hai false (by default false hi rehta hai ) toh likhne ki jruat bhi ni hai (false ka yaha kaam event propagation se related hai)
+
+    //     alert("owl clicked again")
+
+    // })
+
+    // attachEvent() method - ye pehle kaam aata tha internet explorer ke time.
+    // jQuery - On event hota tha isme bhi 
+
+    // ye sab padhna for the interviews perspective.
+    // type , timestamp, defaultPrevented
+    // target , toElement , srcElement
+    // clientX , clientY , screenX , screenY
+    // altkey, ctrlkey , shiftkey , keyCode
+
+
+    // document.getElementsById('image').addEventListener('click', function (e) {
+    //     console.log("Clicked inside the ul");
+    // }, false)
+
+    // document.getElementById('owl').addEventListener('click', function (e) {
+    //     console.log("Owl clicked ");
+    //     e.stopPropagation()
+    // } , false)
+
+    // //third parameter 
+    // // true - capturing mode , top se bottom (ul -> li-> element) 
+    // // false - bubbling , bottom to top ( element -> li -> ul)
+
+    // document.getElementById('google').addEventListener('click' , function(e){
+    //     e.preventDefault();
+    //     console.log("google clicked");
+    // }, false)
+
+    document.querySelector('#image').addEventListener('click' , function (e) {
+        console.log(e.target.tagName);
+        if(e.target.tagName === 'IMG'){
+           console.log(e.target.id)
+            let removeIt = e.target.parentNode;
+        removeIt.remove(); 
+        }
+        
+    })
+
+</script>
+
+</html>
